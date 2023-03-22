@@ -1,15 +1,18 @@
-import java.util.List;
+import java.util.*;
 
 // Los in deze klasse alle foutmeldingen op door (abstracte) klassen met variabelen en methodes te maken en een interface met methodes (en soms een import).
 public class PokemonGymImpl implements PokemonGym {
-
-
+//    Instance Variables
     List<Pokemon> pokemons;
 
+
+//    Constructor
     public PokemonGymImpl(List<Pokemon> pokemons) {
         this.pokemons = pokemons;
     }
 
+
+//    Instance Methods
     @Override
     public void enteredTheGym(PokemonTrainer player1) {
         PokemonGymOwner gymOwner = new PokemonGymOwner("Brock", "Pewter City", pokemons);
