@@ -3,7 +3,7 @@ import java.util.List;
 
 public class GrassPokemon extends Pokemon{
 //    Instance Variables
-    List<String> attacks = Arrays.asList(/*voer de aanvallen hier in*/);
+    List<String> attacks = Arrays.asList("leechSeed", "leaveBlade", "leafStorm", "solarBeam");
 
 
 //    Constructor
@@ -12,7 +12,12 @@ public class GrassPokemon extends Pokemon{
     }
 
 
-//    Getters & Setters
+    //    Getters & Setters
+    @Override
+    public String getType(){
+        return "grass";
+    }
+
     List<String> getAttacks() {
         return attacks;
     }

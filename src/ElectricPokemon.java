@@ -13,6 +13,11 @@ public class ElectricPokemon extends Pokemon{
 
 
 //    Getters & Setters
+    @Override
+    public String getType(){
+        return "electric";
+    }
+
     List<String> getAttacks() {
         return attacks;
     }
@@ -20,7 +25,7 @@ public class ElectricPokemon extends Pokemon{
 
 //    Instance Methods
     void  thunderPunch(Pokemon name, Pokemon enemy){
-
+        System.out.println(name + " attacks " + getName() + " with " + getAttacks());
     }
 
     void electroBall(Pokemon name, Pokemon enemy){

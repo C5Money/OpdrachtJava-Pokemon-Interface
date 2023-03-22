@@ -13,6 +13,10 @@ public class FirePokemon extends Pokemon{
 
 
 //    Getters & Setters
+    public String getType(){
+        return "fire";
+    }
+
     List<String> getAttacks() {
         return attacks;
     }

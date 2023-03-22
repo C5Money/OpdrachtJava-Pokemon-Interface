@@ -13,6 +13,11 @@ public class WaterPokemon extends Pokemon{
 
 
 //    Getters & Setters
+    @Override
+    public String getType(){
+        return "water";
+    }
+
     List<String> getAttacks() {
         return attacks;
     }

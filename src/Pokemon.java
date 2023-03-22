@@ -5,8 +5,6 @@ public abstract class Pokemon {
     private int hp;
     private String food;
     private String sound;
-    private String type;
-
 
 
 //    Constructor
@@ -60,9 +58,7 @@ public abstract class Pokemon {
         this.sound = sound;
     }
 
-    public String getType(){
-        return type;
-    }
 
 //    Instance Methods
+    public abstract String getType();
 }

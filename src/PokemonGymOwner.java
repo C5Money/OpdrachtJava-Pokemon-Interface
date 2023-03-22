@@ -7,6 +7,7 @@ public class PokemonGymOwner extends PokemonTrainer{
 //    Constructor
     public PokemonGymOwner(String name, String town, List<Pokemon> pokemons) {
         super(name, pokemons);
+        this.town = town;
     }
 
 
